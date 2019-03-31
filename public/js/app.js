@@ -8,6 +8,7 @@ weatherForm.addEventListener('submit', (e) => {
   const p1 = document.getElementById('para-1')
   const p2 = document.getElementById('para-2')
 
+  p1.textContent = ''
   p2.textContent = 'Loading...'
   fetch(url).then(response => {
     response.json().then(data => {
