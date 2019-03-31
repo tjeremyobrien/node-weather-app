@@ -4,7 +4,7 @@ const search = document.querySelector("input")
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()
   const location = search.value
-  const url = 'http://localhost:3000/weather?address=' + location
+  const url = '/weather?address=' + location
   const p1 = document.getElementById('para-1')
   const p2 = document.getElementById('para-2')
 
